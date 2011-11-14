@@ -27,6 +27,7 @@
 #include "internal.h"
 #include "url.h"
 #include <stdarg.h>
+#include <unistd.h>
 
 #define IO_BUFFER_SIZE 32768
 

@@ -19,11 +19,11 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  */
 
+#undef __STRICT_ANSI__ //workaround due to broken kernel headers
 #include "avdevice.h"
 
 #if FF_API_V4L
 
-#undef __STRICT_ANSI__ //workaround due to broken kernel headers
 #include "config.h"
 #include "libavutil/rational.h"
 #include "libavutil/imgutils.h"

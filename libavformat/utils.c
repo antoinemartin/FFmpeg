@@ -37,6 +37,7 @@
 #include "audiointerleave.h"
 #include "url.h"
 #include <sys/time.h>
+#include <unistd.h>
 #include <time.h>
 #include <strings.h>
 #include <stdarg.h>

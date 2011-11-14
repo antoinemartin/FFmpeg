@@ -258,7 +258,7 @@ static void Super2xSaI_ex(uint8_t *src, uint32_t src_pitch,
                         sbp = (unsigned short*)src_line[1];
                         color[4] = *sbp;     color[5] = color[4];    color[6] = *(sbp + 1);  color[7] = *(sbp + 2);
                         sbp = (unsigned short*)src_line[2];
-                        color[8] = *sbp;     color[9] = color[9];    color[10] = *(sbp + 1); color[11] = *(sbp + 2);
+                        color[8] = *sbp;     /* color[9] = color[9]; */   color[10] = *(sbp + 1); color[11] = *(sbp + 2);
                         sbp = (unsigned short*)src_line[3];
                         color[12] = *sbp;    color[13] = color[12];  color[14] = *(sbp + 1); color[15] = *(sbp + 2);
                 }
@@ -269,7 +269,7 @@ static void Super2xSaI_ex(uint8_t *src, uint32_t src_pitch,
                         lbp = (uint32_t*)src_line[1];
                         color[4] = *lbp;     color[5] = color[4];    color[6] = *(lbp + 1);  color[7] = *(lbp + 2);
                         lbp = (uint32_t*)src_line[2];
-                        color[8] = *lbp;     color[9] = color[9];    color[10] = *(lbp + 1); color[11] = *(lbp + 2);
+                        color[8] = *lbp;     /* color[9] = color[9]; */   color[10] = *(lbp + 1); color[11] = *(lbp + 2);
                         lbp = (uint32_t*)src_line[3];
                         color[12] = *lbp;    color[13] = color[12];  color[14] = *(lbp + 1); color[15] = *(lbp + 2);
                 }
